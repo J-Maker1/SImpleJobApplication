@@ -1,0 +1,14 @@
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Job App.exe.config
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Job App.exe
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Job App.pdb
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.AssemblyReference.cache
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Properties.Resources.resources
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Form2.resources
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.GenerateResource.cache
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.CoreCompileInputs.cache
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.exe
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.pdb
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Login.resources
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Form1.resources
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.PopupEmployer.resources
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.PopupUser.resources

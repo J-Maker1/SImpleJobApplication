@@ -16,5 +16,15 @@ namespace Job_App
         {
             InitializeComponent();
         }
+
+        private void PopupUser_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PopupUser_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

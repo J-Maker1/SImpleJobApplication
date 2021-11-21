@@ -29,10 +29,19 @@ namespace Job_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // PopupUser
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "PopupUser";
             this.Text = "Form3";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PopupUser_FormClosed);
+            this.Load += new System.EventHandler(this.PopupUser_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
