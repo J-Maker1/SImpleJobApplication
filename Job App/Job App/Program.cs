@@ -26,7 +26,7 @@ namespace Job_App
             employerPage = new Form1();
             popupUserPage = new PopupUser();
             popupEmployer = new PopupEmployer();
-            Application.Run(userPage);
+            Application.Run(login);
         }
     }
 }
