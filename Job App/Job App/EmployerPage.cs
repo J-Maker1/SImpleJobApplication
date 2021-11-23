@@ -17,19 +17,9 @@ namespace Job_App
             InitializeComponent();
         }
 
-        private void LogoutButton_Click(object sender, EventArgs e)
-        {
-            Program.login.Show();
-            this.Hide();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            AvgSalaryRange.SelectedIndex = 0;
-            MaxSalaryRange.SelectedIndex = 0;
-            JobGrowthRange.SelectedIndex = 0;
-            StateChoice.SelectedIndex = 0;
-            RegionChoice.SelectedIndex = 0;
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
