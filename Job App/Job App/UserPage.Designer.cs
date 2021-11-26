@@ -270,6 +270,7 @@ namespace Job_App
             this.SearchButton.TabIndex = 18;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // LogoutButton
             // 

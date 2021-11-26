@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Job_App
 {
@@ -35,6 +36,11 @@ namespace Job_App
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
