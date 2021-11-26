@@ -26,5 +26,10 @@ namespace Job_App
         {
             Application.Exit();
         }
+
+        private void title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

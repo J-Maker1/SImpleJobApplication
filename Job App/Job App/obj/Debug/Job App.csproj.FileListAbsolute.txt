@@ -26,3 +26,15 @@ C:\Users\carlo\Desktop\cse-412-database\SImpleJobApplication\Job App\Job App\obj
 C:\Users\carlo\Desktop\cse-412-database\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.CoreCompileInputs.cache
 C:\Users\carlo\Desktop\cse-412-database\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.exe
 C:\Users\carlo\Desktop\cse-412-database\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.pdb
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.AssemblyReference.cache
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.SuggestedBindingRedirects.cache
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Form1.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Login.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.PopupEmployer.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.PopupUser.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Properties.Resources.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job_App.Form2.resources
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.GenerateResource.cache
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.CoreCompileInputs.cache
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.exe
+C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.pdb
