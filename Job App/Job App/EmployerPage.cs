@@ -25,9 +25,6 @@ namespace Job_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            AvgSalaryRange.SelectedIndex = 0;
-            MaxSalaryRange.SelectedIndex = 0;
-            JobGrowthRange.SelectedIndex = 0;
             StateChoice.SelectedIndex = 0;
             RegionChoice.SelectedIndex = 0;
         }

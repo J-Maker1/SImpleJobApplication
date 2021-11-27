@@ -38,3 +38,32 @@ C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\De
 C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.CoreCompileInputs.cache
 C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.exe
 C:\Users\cammc\Source\Repos\J-Maker1\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.pdb
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Microsoft.Bcl.HashCode.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Npgsql.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Buffers.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Collections.Immutable.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Memory.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Numerics.Vectors.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Text.Encodings.Web.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Text.Json.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Threading.Channels.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.ValueTuple.dll
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Microsoft.Bcl.HashCode.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\Npgsql.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Buffers.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Collections.Immutable.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Memory.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Numerics.Vectors.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Text.Encodings.Web.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Text.Json.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Threading.Channels.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\bin\Debug\System.ValueTuple.xml
+E:\GitHub\SImpleJobApplication\Job App\Job App\obj\Debug\Job App.csproj.CopyComplete
