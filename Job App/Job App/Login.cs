@@ -37,7 +37,7 @@ namespace Job_App
 
             if(comboBox1.Text == "Applicant")
             {
-                string query = String.Format("SELECT ap.username, ap.password FROM Applicant AS ap WHERE ap.username = '{0}'", entrUsr);
+                string query = String.Format("SELECT ap.username, ap.password FROM Applicant AS ap WHERE ap.username = \'{0}\'", entrUsr);
                 var cmd = new NpgsqlCommand(query, con);
                 NpgsqlDataReader rdr = cmd.ExecuteReader();
 
