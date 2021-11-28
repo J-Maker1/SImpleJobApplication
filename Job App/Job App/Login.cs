@@ -20,7 +20,8 @@ namespace Job_App
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            label11.Hide();
+            label10.Hide();
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
@@ -92,6 +93,8 @@ namespace Job_App
 
                 }
             }
+            textBox1.Text = String.Empty; textBox2.Text = String.Empty;
+            comboBox1.Text = String.Empty;
         }
 
         //This is the method for the register button being clicked
@@ -113,6 +116,7 @@ namespace Job_App
                     Guid.NewGuid().ToString("N"), entrUsr, entrPass, entrName);
                 cmd.ExecuteNonQuery();
                 Console.WriteLine("Applicant created");
+                label10.Show();
 
             }
             else if(usrType.Equals("Employer"))
@@ -122,10 +126,12 @@ namespace Job_App
                     Guid.NewGuid().ToString("N"), entrUsr, entrPass, entrName);
                 cmd.ExecuteNonQuery();
                 Console.WriteLine("Employer created");
-                textBox4.Text
+                label10.Show();
+
 
             }
-
+            textBox3.Text = String.Empty; textBox4.Text = String.Empty;
+            textBox5.Text = String.Empty; comboBox2.Text = String.Empty;
 
             con.Close();
 
