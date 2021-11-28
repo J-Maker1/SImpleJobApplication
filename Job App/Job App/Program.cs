@@ -13,6 +13,7 @@ namespace Job_App
         public static Login login;
         public static PopupEmployer popupEmployer;
         public static PopupUser popupUserPage;
+        public static String jobIDViewed;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

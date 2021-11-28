@@ -18,12 +18,14 @@ namespace Job_App
             InitializeComponent();
         }
 
+        //Setting handler for when the user logs out
         private void LogoutButton_Click(object sender, EventArgs e)
         {
             Program.login.Show();
             this.Hide();
         }
 
+        //Setting default values of the combo boxes
         private void Form2_Load(object sender, EventArgs e)
         {
             AvgSalaryRange.SelectedIndex = 0;
@@ -33,11 +35,13 @@ namespace Job_App
             RegionChoice.SelectedIndex = 0;
         }
 
+        //Make sure program ends when exiting the window
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
+        //Event handler for searching jobs
         private void SearchButton_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
@@ -150,11 +154,11 @@ namespace Job_App
                 if (whereAdded == false)
                 {
                     whereAdded = true;
-                    sql += "WHERE state = '" + StateChoice.SelectedIndex.ToString() + "'";
+                    sql += " WHERE state = '" + StateChoice.Text + "'";
                 }
                 else
                 {
-                    sql += "AND state = '" + StateChoice.SelectedIndex.ToString() + "'";
+                    sql += " AND state = '" + StateChoice.Text + "'";
                 }
             }
             //Region Search
@@ -163,18 +167,18 @@ namespace Job_App
                 if (whereAdded == false)
                 {
                     whereAdded = true;
-                    sql += "WHERE region = '" + RegionChoice.SelectedIndex.ToString() + "'";
+                    sql += " WHERE region = '" + RegionChoice.Text + "'";
                 }
                 else
                 {
-                    sql += "AND region = '" + RegionChoice.SelectedIndex.ToString() + "'";
+                    sql += " AND region = '" + RegionChoice.Text + "'";
                 }
             }
             //Send Command to db
             var cmd = new NpgsqlCommand(sql, con);
             NpgsqlDataReader rdr = cmd.ExecuteReader();
 
-            //Record the db output
+            //Record the db output and place it in the list
             while (rdr.Read())
             {
                 ListViewItem item = new ListViewItem(rdr.GetString(0));
@@ -189,9 +193,18 @@ namespace Job_App
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        //Event handler for when a user double clicks a job in the list
+        private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            ListViewHitTestInfo info = listView1.HitTest(e.X, e.Y);
+            ListViewItem item = info.Item;
 
+            if (item != null)   //If the item isn't empty, then we set the global variable jobIDViewed to the job id that was clicked and switch windows to the popup
+            {
+                Program.jobIDViewed = item.Text;
+                Program.popupUserPage.Show();
+                this.Hide();
+            }
         }
     }
 }
