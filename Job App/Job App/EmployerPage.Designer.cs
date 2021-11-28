@@ -39,13 +39,23 @@ namespace Job_App
             this.JobNameBox = new System.Windows.Forms.TextBox();
             this.AvgSalaryBox = new System.Windows.Forms.TextBox();
             this.MaxSalaryBox = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.JobGrowthBox = new System.Windows.Forms.TextBox();
             this.StateChoice = new System.Windows.Forms.ComboBox();
             this.RegionChoice = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.Job_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Job_Name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Average_Salary = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Max_Salary = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Job_Growth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Job_State = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Job_Region = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SearchButton = new System.Windows.Forms.Button();
             this.LogoutButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -133,12 +143,12 @@ namespace Job_App
             this.MaxSalaryBox.Size = new System.Drawing.Size(258, 20);
             this.MaxSalaryBox.TabIndex = 10;
             // 
-            // textBox1
+            // JobGrowthBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(478, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 20);
-            this.textBox1.TabIndex = 14;
+            this.JobGrowthBox.Location = new System.Drawing.Point(478, 57);
+            this.JobGrowthBox.Name = "JobGrowthBox";
+            this.JobGrowthBox.Size = new System.Drawing.Size(164, 20);
+            this.JobGrowthBox.TabIndex = 14;
             // 
             // StateChoice
             // 
@@ -219,10 +229,66 @@ namespace Job_App
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel1.Controls.Add(this.listView1);
             this.panel1.Location = new System.Drawing.Point(12, 183);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 255);
             this.panel1.TabIndex = 17;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Job_ID,
+            this.Job_Name,
+            this.Average_Salary,
+            this.Max_Salary,
+            this.Job_Growth,
+            this.Job_State,
+            this.Job_Region});
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 4);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(770, 294);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listView1_MouseDoubleClick);
+            // 
+            // Job_ID
+            // 
+            this.Job_ID.Text = "ID";
+            // 
+            // Job_Name
+            // 
+            this.Job_Name.Text = "Name";
+            this.Job_Name.Width = 200;
+            // 
+            // Average_Salary
+            // 
+            this.Average_Salary.Text = "Average Salary";
+            this.Average_Salary.Width = 100;
+            // 
+            // Max_Salary
+            // 
+            this.Max_Salary.Text = "Max Salary";
+            this.Max_Salary.Width = 100;
+            // 
+            // Job_Growth
+            // 
+            this.Job_Growth.Text = "Job Growth";
+            this.Job_Growth.Width = 100;
+            // 
+            // Job_State
+            // 
+            this.Job_State.Text = "State";
+            this.Job_State.Width = 100;
+            // 
+            // Job_Region
+            // 
+            this.Job_Region.Text = "Region";
+            this.Job_Region.Width = 100;
             // 
             // SearchButton
             // 
@@ -232,6 +298,7 @@ namespace Job_App
             this.SearchButton.TabIndex = 18;
             this.SearchButton.Text = "Add";
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click_1);
             // 
             // LogoutButton
             // 
@@ -253,18 +320,28 @@ namespace Job_App
             this.label8.TabIndex = 20;
             this.label8.Text = "Current Listings";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(16, 150);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(35, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.RegionChoice);
             this.Controls.Add(this.StateChoice);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.JobGrowthBox);
             this.Controls.Add(this.MaxSalaryBox);
             this.Controls.Add(this.AvgSalaryBox);
             this.Controls.Add(this.JobNameBox);
@@ -279,6 +356,7 @@ namespace Job_App
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,12 +373,21 @@ namespace Job_App
         private System.Windows.Forms.TextBox JobNameBox;
         private System.Windows.Forms.TextBox AvgSalaryBox;
         private System.Windows.Forms.TextBox MaxSalaryBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox JobGrowthBox;
         private System.Windows.Forms.ComboBox StateChoice;
         private System.Windows.Forms.ComboBox RegionChoice;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader Job_ID;
+        private System.Windows.Forms.ColumnHeader Job_Name;
+        private System.Windows.Forms.ColumnHeader Average_Salary;
+        private System.Windows.Forms.ColumnHeader Max_Salary;
+        private System.Windows.Forms.ColumnHeader Job_Growth;
+        private System.Windows.Forms.ColumnHeader Job_State;
+        private System.Windows.Forms.ColumnHeader Job_Region;
+        private System.Windows.Forms.Label label9;
     }
 }

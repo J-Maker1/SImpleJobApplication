@@ -13,6 +13,8 @@ namespace Job_App
 {
     public partial class Login : Form
     {
+        //Employer object created to get employee id when logged in
+        public static Form1 employerPage;
         public Login()
         {
             InitializeComponent();
@@ -67,7 +69,7 @@ namespace Job_App
             }
             else if (comboBox1.Text == "Employer")
             {
-                string query = String.Format("SELECT ap.password FROM Employer AS ap WHERE ap.username = \'{0}\';", entrUsr);
+                string query = String.Format("SELECT ap.password, ap.user_id FROM Employer AS ap WHERE ap.username = \'{0}\';", entrUsr);
                 var cmd = new NpgsqlCommand(query, con);
                 NpgsqlDataReader rdr = cmd.ExecuteReader();
 
@@ -87,10 +89,12 @@ namespace Job_App
 
                     if (passmatch)
                     {
-                        Program.employerPage.Show();
+                        // grab the employer id
+                        String employerID = rdr.GetString(1);
+                        employerPage = new Form1(employerID);
+                        employerPage.Show();
                         this.Hide();
                     }
-
                 }
             }
             textBox1.Text = String.Empty; textBox2.Text = String.Empty;

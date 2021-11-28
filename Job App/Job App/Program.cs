@@ -8,7 +8,6 @@ namespace Job_App
 {
     static class Program
     {
-        public static Form1 employerPage;
         public static Form2 userPage;
         public static Login login;
         public static PopupEmployer popupEmployer;
@@ -24,10 +23,9 @@ namespace Job_App
             Application.SetCompatibleTextRenderingDefault(false);
             userPage = new Form2();
             login = new Login();
-            employerPage = new Form1();
             popupUserPage = new PopupUser();
             popupEmployer = new PopupEmployer();
-            Application.Run(login);
+            Application.Run(login);   
         }
     }
 }
