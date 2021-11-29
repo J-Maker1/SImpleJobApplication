@@ -97,7 +97,6 @@ namespace Job_App
             this.avgBox.Name = "avgBox";
             this.avgBox.Size = new System.Drawing.Size(71, 20);
             this.avgBox.TabIndex = 22;
-            this.avgBox.TextChanged += new System.EventHandler(this.avgBox_TextChanged);
             // 
             // titleBox
             // 

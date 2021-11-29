@@ -14,12 +14,7 @@ namespace Job_App
     public partial class PopupEmployer : Form
     {
         int[] change = { 0, 0, 0, 0, 0, 0 };
-        string newTitle;
-        string newAvg;
-        string newMax;
-        string newGrowth;
-        string newState;
-        string newRegion;
+        
         public PopupEmployer()
         {
             InitializeComponent();
@@ -44,48 +39,35 @@ namespace Job_App
             var con = new NpgsqlConnection(cs);
             con.Open();
 
-            if (change[0] == 1)
-            {
-                var sql = "UPDATE job SET job_name = '" + newTitle + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
-            if (change[1] == 1)
-            {
-                var sql = "UPDATE job SET avg_salary = '" + avgBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
-            if (change[2] == 1)
-            {
-                var sql = "UPDATE job SET max_salary = '" + newMax + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
-            if (change[3] == 1)
-            {
-                var sql = "UPDATE job SET job_growth = '" + growthBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
-            if (change[4] == 1)
-            {
-                var sql = "UPDATE job SET state = '" + stateBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
-            if (change[5] == 1)
-            {
-                var sql = "UPDATE job SET region = '" + regionBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-                //Send Command to db
-                var cmd = new NpgsqlCommand(sql, con);
-                NpgsqlDataReader rdr = cmd.ExecuteReader();
-            }
+            var sql = "UPDATE job SET job_name = '" + titleBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            var cmd = new NpgsqlCommand(sql, con);
+            NpgsqlDataReader rdr = cmd.ExecuteReader();
+
+            sql = "UPDATE job SET avg_salary = '" + avgBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            cmd = new NpgsqlCommand(sql, con);
+            rdr = cmd.ExecuteReader();
+
+            sql = "UPDATE job SET max_salary = '" + maxBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            cmd = new NpgsqlCommand(sql, con);
+            rdr = cmd.ExecuteReader();
+
+            sql = "UPDATE job SET job_growth = '" + growthBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            cmd = new NpgsqlCommand(sql, con);
+            rdr = cmd.ExecuteReader();
+
+            sql = "UPDATE job SET state = '" + stateBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            cmd = new NpgsqlCommand(sql, con);
+            rdr = cmd.ExecuteReader();
+
+            sql = "UPDATE job SET region = '" + regionBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            //Send Command to db
+            cmd = new NpgsqlCommand(sql, con);
+            rdr = cmd.ExecuteReader();
 
         }
 
@@ -127,42 +109,6 @@ namespace Job_App
             Program.jobIDViewed = "";
             Program.employerPage.Show();
             this.Hide();
-        }
-        private void titelBox_TextChanged(object sender, EventArgs e)
-        {
-            change[0] = 1;
-            newTitle = titleBox.Text;
-            update_Click(sender, e);
-        }
-        private void avgBox_TextChanged(object sender, EventArgs e)
-        {
-            change[1] = 1;
-            newAvg = avgBox.Text;
-            update_Click(sender, e);
-        }
-        private void maxBox_TextChanged(object sender, EventArgs e)
-        {
-            change[2] = 1;
-            newMax = maxBox.Text;
-            update_Click(sender, e);
-        }
-        private void growthBox_TextChanged(object sender, EventArgs e)
-        {
-            change[3] = 1;
-            newGrowth = growthBox.Text;
-            update_Click(sender, e);
-        }
-        private void stateBox_TextChanged(object sender, EventArgs e)
-        {
-            change[4] = 1;
-            newState = stateBox.Text;
-            update_Click(sender, e);
-        }
-        private void regionBox_TextChanged(object sender, EventArgs e)
-        {
-            change[5] = 1;
-            newRegion = regionBox.Text;
-            update_Click(sender, e);
         }
 
         public void updateJob()
