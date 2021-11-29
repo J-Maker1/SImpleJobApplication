@@ -122,7 +122,7 @@ namespace Job_App
             // titleBox
             // 
             this.titleBox.Location = new System.Drawing.Point(135, 60);
-            this.titleBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.titleBox.Margin = new System.Windows.Forms.Padding(1);
             this.titleBox.Name = "titleBox";
             this.titleBox.Size = new System.Drawing.Size(136, 20);
             this.titleBox.TabIndex = 7;
@@ -131,7 +131,7 @@ namespace Job_App
             // avgBox
             // 
             this.avgBox.Location = new System.Drawing.Point(135, 88);
-            this.avgBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.avgBox.Margin = new System.Windows.Forms.Padding(1);
             this.avgBox.Name = "avgBox";
             this.avgBox.Size = new System.Drawing.Size(71, 20);
             this.avgBox.TabIndex = 8;
@@ -139,7 +139,7 @@ namespace Job_App
             // maxBox
             // 
             this.maxBox.Location = new System.Drawing.Point(135, 116);
-            this.maxBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.maxBox.Margin = new System.Windows.Forms.Padding(1);
             this.maxBox.Name = "maxBox";
             this.maxBox.Size = new System.Drawing.Size(71, 20);
             this.maxBox.TabIndex = 9;
@@ -147,7 +147,7 @@ namespace Job_App
             // stateBox
             // 
             this.stateBox.Location = new System.Drawing.Point(135, 142);
-            this.stateBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.stateBox.Margin = new System.Windows.Forms.Padding(1);
             this.stateBox.Name = "stateBox";
             this.stateBox.Size = new System.Drawing.Size(28, 20);
             this.stateBox.TabIndex = 10;
@@ -155,7 +155,7 @@ namespace Job_App
             // regionBox
             // 
             this.regionBox.Location = new System.Drawing.Point(135, 166);
-            this.regionBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.regionBox.Margin = new System.Windows.Forms.Padding(1);
             this.regionBox.Name = "regionBox";
             this.regionBox.Size = new System.Drawing.Size(66, 20);
             this.regionBox.TabIndex = 11;
@@ -163,7 +163,7 @@ namespace Job_App
             // growthBox
             // 
             this.growthBox.Location = new System.Drawing.Point(135, 191);
-            this.growthBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.growthBox.Margin = new System.Windows.Forms.Padding(1);
             this.growthBox.Name = "growthBox";
             this.growthBox.Size = new System.Drawing.Size(40, 20);
             this.growthBox.TabIndex = 12;
@@ -171,7 +171,7 @@ namespace Job_App
             // backButton
             // 
             this.backButton.Location = new System.Drawing.Point(102, 231);
-            this.backButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.backButton.Margin = new System.Windows.Forms.Padding(1);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(99, 30);
             this.backButton.TabIndex = 13;
@@ -201,7 +201,6 @@ namespace Job_App
             this.Name = "PopupUser";
             this.Text = "Form3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PopupUser_FormClosed);
-            this.Load += new System.EventHandler(this.PopupUser_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

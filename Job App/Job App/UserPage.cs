@@ -204,6 +204,7 @@ namespace Job_App
                 Program.jobIDViewed = item.Text;
                 Program.popupUserPage.Show();
                 this.Hide();
+                Program.popupUserPage.updateJob();
             }
         }
     }
