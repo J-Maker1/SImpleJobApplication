@@ -30,13 +30,18 @@ namespace Job_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            GetJob();
+        }
+
+        private void GetJob()
+        {
             StateChoice.SelectedIndex = 0;
             RegionChoice.SelectedIndex = 0;
 
             //Connect to db
             var cs = "Host=ec2-44-198-211-34.compute-1.amazonaws.com;Username=pbjcyutaadgyaj;Password=d759389ade78e61ecc88e682dac3cbeacfe8bebd9c262af20d864dba3f4b1fbb;Database=d2iga4s88pcpv9";
             var con = new NpgsqlConnection(cs);
-            
+
             con.Open();
 
             //Build SQL command
@@ -49,7 +54,10 @@ namespace Job_App
             //Record the db output and place it in the list
             while (rdr.Read())
             {
-                jobList.Add(rdr.GetString(0).Trim());
+                if(!jobList.Contains(rdr.GetString(0).Trim()))
+                {
+                    jobList.Add(rdr.GetString(0).Trim());
+                }
             }
             LoadJobs();
         }
@@ -151,6 +159,12 @@ namespace Job_App
                 }
                 con.Close();
             }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GetJob();
         }
     }
 }
