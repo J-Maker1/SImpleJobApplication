@@ -13,12 +13,10 @@ namespace Job_App
 {
     public partial class Form1 : Form
     {
-        public String entrUsr = "";
         //Keep track of job_id's that belong to employer
         List<string> jobList = new List<string>();
-        public Form1(String employerID)
+        public Form1()
         {
-            entrUsr = employerID;
             InitializeComponent();
         }
 
@@ -30,10 +28,10 @@ namespace Job_App
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GetJob();
+            
         }
 
-        private void GetJob()
+        public void GetJob()
         {
             StateChoice.SelectedIndex = 0;
             RegionChoice.SelectedIndex = 0;
@@ -45,7 +43,7 @@ namespace Job_App
             con.Open();
 
             //Build SQL command
-            var sql = "SELECT * FROM PostJob WHERE user_id = '" + entrUsr + "'";
+            var sql = "SELECT * FROM PostJob WHERE user_id = '" + Program.EmployerID + "'";
 
             //Send Command to db
             var cmd = new NpgsqlCommand(sql, con);
@@ -78,6 +76,7 @@ namespace Job_App
                 Program.jobIDViewed = item.Text;
                 Program.popupEmployer.Show();
                 this.Hide();
+                Program.popupEmployer.updateJob();
             }
         }
 
@@ -122,7 +121,7 @@ namespace Job_App
             con.Open();
 
             //Build SQL command
-            var sql = "INSERT INTO PostJob (job_id, user_id, date) VALUES ('" + job_id.ToString() +"', '"+ entrUsr.Trim()+"', '"+ DateTime.Now.ToString("MM/dd/yyyy")+"')";
+            var sql = "INSERT INTO PostJob (job_id, user_id, date) VALUES ('" + job_id.ToString() +"', '"+ Program.EmployerID.Trim()+"', '"+ DateTime.Now.ToString("MM/dd/yyyy")+"')";
             Console.WriteLine(sql);
             var cmd = new NpgsqlCommand(sql, con);
             cmd.ExecuteNonQuery();

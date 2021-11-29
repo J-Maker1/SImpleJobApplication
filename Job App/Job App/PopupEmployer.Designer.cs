@@ -50,7 +50,7 @@ namespace Job_App
             // backButton
             // 
             this.backButton.Location = new System.Drawing.Point(342, 16);
-            this.backButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.backButton.Margin = new System.Windows.Forms.Padding(1);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(118, 22);
             this.backButton.TabIndex = 27;
@@ -61,7 +61,7 @@ namespace Job_App
             // growthBox
             // 
             this.growthBox.Location = new System.Drawing.Point(135, 195);
-            this.growthBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.growthBox.Margin = new System.Windows.Forms.Padding(1);
             this.growthBox.Name = "growthBox";
             this.growthBox.Size = new System.Drawing.Size(40, 20);
             this.growthBox.TabIndex = 26;
@@ -69,7 +69,7 @@ namespace Job_App
             // regionBox
             // 
             this.regionBox.Location = new System.Drawing.Point(135, 169);
-            this.regionBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.regionBox.Margin = new System.Windows.Forms.Padding(1);
             this.regionBox.Name = "regionBox";
             this.regionBox.Size = new System.Drawing.Size(66, 20);
             this.regionBox.TabIndex = 25;
@@ -77,7 +77,7 @@ namespace Job_App
             // stateBox
             // 
             this.stateBox.Location = new System.Drawing.Point(135, 146);
-            this.stateBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.stateBox.Margin = new System.Windows.Forms.Padding(1);
             this.stateBox.Name = "stateBox";
             this.stateBox.Size = new System.Drawing.Size(28, 20);
             this.stateBox.TabIndex = 24;
@@ -85,7 +85,7 @@ namespace Job_App
             // maxBox
             // 
             this.maxBox.Location = new System.Drawing.Point(135, 120);
-            this.maxBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.maxBox.Margin = new System.Windows.Forms.Padding(1);
             this.maxBox.Name = "maxBox";
             this.maxBox.Size = new System.Drawing.Size(71, 20);
             this.maxBox.TabIndex = 23;
@@ -93,7 +93,7 @@ namespace Job_App
             // avgBox
             // 
             this.avgBox.Location = new System.Drawing.Point(135, 92);
-            this.avgBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.avgBox.Margin = new System.Windows.Forms.Padding(1);
             this.avgBox.Name = "avgBox";
             this.avgBox.Size = new System.Drawing.Size(71, 20);
             this.avgBox.TabIndex = 22;
@@ -102,7 +102,7 @@ namespace Job_App
             // titleBox
             // 
             this.titleBox.Location = new System.Drawing.Point(135, 64);
-            this.titleBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.titleBox.Margin = new System.Windows.Forms.Padding(1);
             this.titleBox.Name = "titleBox";
             this.titleBox.Size = new System.Drawing.Size(136, 20);
             this.titleBox.TabIndex = 21;
@@ -181,7 +181,7 @@ namespace Job_App
             // update
             // 
             this.update.Location = new System.Drawing.Point(80, 231);
-            this.update.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.update.Margin = new System.Windows.Forms.Padding(1);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(80, 25);
             this.update.TabIndex = 28;
@@ -192,7 +192,7 @@ namespace Job_App
             // delete
             // 
             this.delete.Location = new System.Drawing.Point(163, 231);
-            this.delete.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.delete.Margin = new System.Windows.Forms.Padding(1);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(80, 25);
             this.delete.TabIndex = 29;
@@ -224,7 +224,6 @@ namespace Job_App
             this.Name = "PopupEmployer";
             this.Text = "PopupEmployer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PopupEmployer_FormClosed);
-            this.Load += new System.EventHandler(this.PopupEmployer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

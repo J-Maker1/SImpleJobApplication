@@ -90,10 +90,10 @@ namespace Job_App
                     if (passmatch)
                     {
                         // grab the employer id
-                        String employerID = rdr.GetString(1);
-                        employerPage = new Form1(employerID);
-                        employerPage.Show();
+                        Program.EmployerID = rdr.GetString(1);
+                        Program.employerPage.Show();
                         this.Hide();
+                        Program.employerPage.GetJob();
                     }
                 }
             }

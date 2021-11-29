@@ -20,6 +20,7 @@ namespace Job_App
         public static String jobREgionViewed;
         public static String jobGrowthViewed;
         public static Form1 employerPage;
+        public static String EmployerID;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -30,7 +31,7 @@ namespace Job_App
             Application.SetCompatibleTextRenderingDefault(false);
             userPage = new Form2();
             login = new Login();
-            employerPage = new Form1("");
+            employerPage = new Form1();
             popupUserPage = new PopupUser();
             popupEmployer = new PopupEmployer();
             Application.Run(login);   
