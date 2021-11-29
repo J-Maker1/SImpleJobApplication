@@ -39,35 +39,47 @@ namespace Job_App
             var con = new NpgsqlConnection(cs);
             con.Open();
 
-            var sql = "UPDATE job SET job_name = '" + titleBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-            //Send Command to db
-            var cmd = new NpgsqlCommand(sql, con);
-            NpgsqlDataReader rdr = cmd.ExecuteReader();
+            var sql1 = "UPDATE job SET job_name = '" + titleBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            var sql2 = "UPDATE job SET avg_salary = '" + avgBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            var sql3 = "UPDATE job SET max_salary = '" + maxBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            var sql4 = "UPDATE job SET job_growth = '" + growthBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            var sql5 = "UPDATE job SET state = '" + stateBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            var sql6 = "UPDATE job SET region = '" + regionBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
 
-            sql = "UPDATE job SET avg_salary = '" + avgBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
             //Send Command to db
-            cmd = new NpgsqlCommand(sql, con);
-            rdr = cmd.ExecuteReader();
+            var cmd1 = new NpgsqlCommand(sql1, con);
+            //NpgsqlDataReader rdr1 = cmd1.ExecuteReader();
+            var rdr1 = cmd1.ExecuteNonQuery();
 
-            sql = "UPDATE job SET max_salary = '" + maxBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+            
             //Send Command to db
-            cmd = new NpgsqlCommand(sql, con);
-            rdr = cmd.ExecuteReader();
+            var cmd2 = new NpgsqlCommand(sql2, con);
+            //NpgsqlDataReader rdr2 = cmd2.ExecuteReader();
+            var rdr2 = cmd2.ExecuteNonQuery();
 
-            sql = "UPDATE job SET job_growth = '" + growthBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
-            //Send Command to db
-            cmd = new NpgsqlCommand(sql, con);
-            rdr = cmd.ExecuteReader();
 
-            sql = "UPDATE job SET state = '" + stateBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
             //Send Command to db
-            cmd = new NpgsqlCommand(sql, con);
-            rdr = cmd.ExecuteReader();
+            var cmd3 = new NpgsqlCommand(sql3, con);
+            //NpgsqlDataReader rdr3 = cmd3.ExecuteReader();
+            var rdr3 = cmd3.ExecuteNonQuery();
 
-            sql = "UPDATE job SET region = '" + regionBox.Text + "' WHERE job_id = '" + Program.jobIDViewed + "'";
+
             //Send Command to db
-            cmd = new NpgsqlCommand(sql, con);
-            rdr = cmd.ExecuteReader();
+            var cmd4 = new NpgsqlCommand(sql4, con);
+            //NpgsqlDataReader rdr4 = cmd4.ExecuteReader();
+            var rdr4 = cmd4.ExecuteNonQuery();
+
+
+            //Send Command to db
+            var cmd5 = new NpgsqlCommand(sql5, con);
+            //NpgsqlDataReader rdr5 = cmd5.ExecuteReader();
+            var rdr5 = cmd5.ExecuteNonQuery();
+
+
+            //Send Command to db
+            var cmd6 = new NpgsqlCommand(sql6, con);
+            //NpgsqlDataReader rdr6 = cmd6.ExecuteReader();
+            var rdr6 = cmd6.ExecuteNonQuery();
 
         }
 
