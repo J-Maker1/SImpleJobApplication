@@ -48,9 +48,10 @@ namespace Job_App
             // title
             // 
             this.title.AutoSize = true;
-            this.title.Location = new System.Drawing.Point(30, 28);
+            this.title.Location = new System.Drawing.Point(11, 12);
+            this.title.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(201, 31);
+            this.title.Size = new System.Drawing.Size(79, 13);
             this.title.TabIndex = 0;
             this.title.Text = "Job Information";
             this.title.Click += new System.EventHandler(this.label1_Click);
@@ -58,9 +59,10 @@ namespace Job_App
             // jobTitle
             // 
             this.jobTitle.AutoSize = true;
-            this.jobTitle.Location = new System.Drawing.Point(259, 144);
+            this.jobTitle.Location = new System.Drawing.Point(97, 60);
+            this.jobTitle.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.jobTitle.Name = "jobTitle";
-            this.jobTitle.Size = new System.Drawing.Size(74, 31);
+            this.jobTitle.Size = new System.Drawing.Size(30, 13);
             this.jobTitle.TabIndex = 1;
             this.jobTitle.Text = "Title:";
             this.jobTitle.Click += new System.EventHandler(this.label1_Click_1);
@@ -68,9 +70,10 @@ namespace Job_App
             // avgSalary
             // 
             this.avgSalary.AutoSize = true;
-            this.avgSalary.Location = new System.Drawing.Point(146, 211);
+            this.avgSalary.Location = new System.Drawing.Point(55, 88);
+            this.avgSalary.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.avgSalary.Name = "avgSalary";
-            this.avgSalary.Size = new System.Drawing.Size(207, 31);
+            this.avgSalary.Size = new System.Drawing.Size(82, 13);
             this.avgSalary.TabIndex = 2;
             this.avgSalary.Text = "Average Salary:";
             this.avgSalary.Click += new System.EventHandler(this.label2_Click);
@@ -78,9 +81,10 @@ namespace Job_App
             // maxSalary
             // 
             this.maxSalary.AutoSize = true;
-            this.maxSalary.Location = new System.Drawing.Point(132, 277);
+            this.maxSalary.Location = new System.Drawing.Point(50, 116);
+            this.maxSalary.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.maxSalary.Name = "maxSalary";
-            this.maxSalary.Size = new System.Drawing.Size(221, 31);
+            this.maxSalary.Size = new System.Drawing.Size(86, 13);
             this.maxSalary.TabIndex = 3;
             this.maxSalary.Text = "Maximum Salary:";
             this.maxSalary.Click += new System.EventHandler(this.label3_Click);
@@ -88,87 +92,98 @@ namespace Job_App
             // state
             // 
             this.state.AutoSize = true;
-            this.state.Location = new System.Drawing.Point(267, 338);
+            this.state.Location = new System.Drawing.Point(100, 142);
+            this.state.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.state.Name = "state";
-            this.state.Size = new System.Drawing.Size(86, 31);
+            this.state.Size = new System.Drawing.Size(35, 13);
             this.state.TabIndex = 4;
             this.state.Text = "State:";
             // 
             // region
             // 
             this.region.AutoSize = true;
-            this.region.Location = new System.Drawing.Point(245, 395);
+            this.region.Location = new System.Drawing.Point(92, 166);
+            this.region.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.region.Name = "region";
-            this.region.Size = new System.Drawing.Size(108, 31);
+            this.region.Size = new System.Drawing.Size(44, 13);
             this.region.TabIndex = 5;
             this.region.Text = "Region:";
             // 
             // growth
             // 
             this.growth.AutoSize = true;
-            this.growth.Location = new System.Drawing.Point(121, 455);
+            this.growth.Location = new System.Drawing.Point(45, 191);
+            this.growth.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.growth.Name = "growth";
-            this.growth.Size = new System.Drawing.Size(232, 31);
+            this.growth.Size = new System.Drawing.Size(92, 13);
             this.growth.TabIndex = 6;
             this.growth.Text = "Projected Growth:";
             // 
             // titleBox
             // 
-            this.titleBox.Location = new System.Drawing.Point(359, 144);
+            this.titleBox.Location = new System.Drawing.Point(135, 60);
+            this.titleBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.titleBox.Name = "titleBox";
-            this.titleBox.Size = new System.Drawing.Size(356, 38);
+            this.titleBox.Size = new System.Drawing.Size(136, 20);
             this.titleBox.TabIndex = 7;
             this.titleBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // avgBox
             // 
-            this.avgBox.Location = new System.Drawing.Point(359, 211);
+            this.avgBox.Location = new System.Drawing.Point(135, 88);
+            this.avgBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.avgBox.Name = "avgBox";
-            this.avgBox.Size = new System.Drawing.Size(183, 38);
+            this.avgBox.Size = new System.Drawing.Size(71, 20);
             this.avgBox.TabIndex = 8;
             // 
             // maxBox
             // 
-            this.maxBox.Location = new System.Drawing.Point(359, 277);
+            this.maxBox.Location = new System.Drawing.Point(135, 116);
+            this.maxBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.maxBox.Name = "maxBox";
-            this.maxBox.Size = new System.Drawing.Size(183, 38);
+            this.maxBox.Size = new System.Drawing.Size(71, 20);
             this.maxBox.TabIndex = 9;
             // 
             // stateBox
             // 
-            this.stateBox.Location = new System.Drawing.Point(359, 338);
+            this.stateBox.Location = new System.Drawing.Point(135, 142);
+            this.stateBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.stateBox.Name = "stateBox";
-            this.stateBox.Size = new System.Drawing.Size(67, 38);
+            this.stateBox.Size = new System.Drawing.Size(28, 20);
             this.stateBox.TabIndex = 10;
             // 
             // regionBox
             // 
-            this.regionBox.Location = new System.Drawing.Point(359, 395);
+            this.regionBox.Location = new System.Drawing.Point(135, 166);
+            this.regionBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.regionBox.Name = "regionBox";
-            this.regionBox.Size = new System.Drawing.Size(170, 38);
+            this.regionBox.Size = new System.Drawing.Size(66, 20);
             this.regionBox.TabIndex = 11;
             // 
             // growthBox
             // 
-            this.growthBox.Location = new System.Drawing.Point(359, 455);
+            this.growthBox.Location = new System.Drawing.Point(135, 191);
+            this.growthBox.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.growthBox.Name = "growthBox";
-            this.growthBox.Size = new System.Drawing.Size(100, 38);
+            this.growthBox.Size = new System.Drawing.Size(40, 20);
             this.growthBox.TabIndex = 12;
             // 
             // backButton
             // 
-            this.backButton.Location = new System.Drawing.Point(273, 552);
+            this.backButton.Location = new System.Drawing.Point(102, 231);
+            this.backButton.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(214, 41);
+            this.backButton.Size = new System.Drawing.Size(99, 30);
             this.backButton.TabIndex = 13;
             this.backButton.Text = "Back to Search";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // PopupUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(722, 445);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.growthBox);
             this.Controls.Add(this.regionBox);
@@ -183,7 +198,6 @@ namespace Job_App
             this.Controls.Add(this.avgSalary);
             this.Controls.Add(this.jobTitle);
             this.Controls.Add(this.title);
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "PopupUser";
             this.Text = "Form3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PopupUser_FormClosed);
