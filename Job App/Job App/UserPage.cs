@@ -93,7 +93,7 @@ namespace Job_App
                         sql += " AND avg_salary > '" + AvgSalaryBox.Text + "'";
                     }
                 }
-                con.Close();
+                
             }
             //Max Salary Search
             if (!string.IsNullOrEmpty(MaxSalaryBox.Text))
@@ -191,7 +191,7 @@ namespace Job_App
                 item.SubItems.Add(rdr.GetString(6));
                 listView1.Items.Add(item);
             }
-
+            con.Close();
         }
 
         //Event handler for when a user double clicks a job in the list
