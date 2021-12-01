@@ -99,6 +99,7 @@ namespace Job_App
             }
             textBox1.Text = String.Empty; textBox2.Text = String.Empty;
             comboBox1.Text = String.Empty;
+            con.Close();
         }
 
         //This is the method for the register button being clicked

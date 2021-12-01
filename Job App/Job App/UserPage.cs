@@ -93,6 +93,7 @@ namespace Job_App
                         sql += " AND avg_salary > '" + AvgSalaryBox.Text + "'";
                     }
                 }
+                con.Close();
             }
             //Max Salary Search
             if (!string.IsNullOrEmpty(MaxSalaryBox.Text))

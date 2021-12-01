@@ -107,6 +107,7 @@ namespace Job_App
             Program.jobIDViewed = "";
             Program.employerPage.Show();
             this.Hide();
+            con.Close();
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -158,6 +159,7 @@ namespace Job_App
             growthBox.Text = rdr4.ToString();
             stateBox.Text = rdr5.ToString();
             regionBox.Text = rdr6.ToString();
+            con.Close();
         }
 
     }

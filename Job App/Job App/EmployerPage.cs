@@ -58,6 +58,7 @@ namespace Job_App
                 }
             }
             LoadJobs();
+            con.Close();
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -109,7 +110,7 @@ namespace Job_App
             {
                 label9.Text = "Please fill out all of the fields!";
             }
-            
+            con.Close();
         }
 
         //Ties the job to the employer id
@@ -125,6 +126,7 @@ namespace Job_App
             Console.WriteLine(sql);
             var cmd = new NpgsqlCommand(sql, con);
             cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         private void LoadJobs()

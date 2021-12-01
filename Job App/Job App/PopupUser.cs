@@ -98,7 +98,7 @@ namespace Job_App
             growthBox.Text = rdr4.ToString();
             stateBox.Text = rdr5.ToString();
             regionBox.Text = rdr6.ToString();
-
+            con.Close();
         }
     }
 }
