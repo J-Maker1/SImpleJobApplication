@@ -1,2 +1,2 @@
 # SImpleJobApplication
-Simple application that communicates with a database for employers and users to work with.
+Simple application that communicates with a specifically designed database for employers and users to work with. Employers will be able to use the application to post, edit, and remove job opening they have, while users can search with filters to find new job openings and be able to observe in greater detail the job informaiton when they click on an opening that looks interesting.
